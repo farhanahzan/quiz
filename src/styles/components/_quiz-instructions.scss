@@ -1,0 +1,126 @@
+section1{
+  position: absolute;
+  width: 100%;
+  
+  background: #3486ff ;
+  overflow: hidden;
+
+  
+ 
+ .instructions {
+  border-radius: 20px;
+  margin-top: $lg !important;
+  margin-bottom: 7rem !important;
+  padding: 1rem 4rem 3.5rem 4rem;
+  box-shadow: 0 0 6px 0 #121213c4;
+  background: #525d5f ;
+  z-index: 1002;
+}
+
+  h1.head {
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Catamaran", sans-serif;
+    color: #fff;
+    -webkit-text-stroke: 0.2vw #da2268;
+    margin: 1rem 0rem 2rem 0rem;
+    text-shadow: 3px 2px 2px #da2268;
+  }
+  h1.head::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: darkgoldenrod;
+    display: inline-block;
+    margin-top: 1px;
+  }
+  p.se-head {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.4em;
+    line-height: 22px;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  li {
+    font-family: "Nunito", sans-serif;
+    list-style-type: none;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+
+    width: 100%;
+    color: #ffffff;
+    padding: 7px 10px 7px 0px;
+  }
+  li::before {
+    content: "";
+    border-left: 15px solid #da2268;
+    padding-left: 10px;
+    border-radius: 15px;
+    
+  }
+  
+  .lifeline {
+    position: relative;
+    top: -3px;
+  }
+
+  .lifeline-icon {
+    color: $green;
+    cursor: pointer;
+  }
+
+  .browser-default {
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  img {
+    width: 100%;
+    box-shadow: 0px 0px 3px 0px #000000bf;
+    height: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .instructions img {
+    width: 100% !important;
+    height: 150% !important;
+  }
+  h1 {
+    font-size: 2em !important;
+  }
+
+  li {
+    text-shadow: none !important;
+    font-size: 1.2em !important;
+  }
+  .instructions {
+    padding: 1rem 2rem 3.5rem 2rem !important;
+  }
+}
+@media (max-width: 420px) {
+  h1 {
+    font-size: 1.5em !important;
+  }
+  li::before {
+    content: none !important;
+  }
+  li {
+    margin-bottom: 10px !important;
+    padding: 0 !important;
+    font-size: 1em !important;
+
+    text-shadow: none !important;
+  }
+  .instructions {
+    padding: 1rem 1rem 3.5rem 1rem !important;
+  }
+  p.se-head{
+font-size: 1em !important;
+  }
+}
